@@ -1,4 +1,23 @@
 .Construction-logo {
     height: 40vmin;
     pointer-events: none;
+    
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .Construction-logo {
+      animation: shadowUpDown infinite 30s linear;
+    }
+  }
+
+@keyframes shadowUpDown {
+  0% {
+    filter: drop-shadow(20px 10px 10px #969696)
+  }
+  50% {
+    filter: drop-shadow(20px 10px 15px #8a8888)
+  }
+  100% {
+    filter: drop-shadow(20px 10px 10px #969696)
+  }
+}
